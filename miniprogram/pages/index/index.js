@@ -43,7 +43,7 @@ Page({
         //并取出来放到data
         console.log("初始化了一下");
         this.setlist()
-        // wx.setStorageSync(openid, [])
+        wx.setStorageSync(openid, [])
       }else{
         //以前放到缓存过就取出来放data里面
         this.getlist()
