@@ -87,8 +87,9 @@ Page({
   },
   // 检索
   jiansuo() {
+    ishave=false
     console.log(data[1]);
-    console.log("datassm" + data);
+    // console.log("datassm" + data);
     let that = this
     let x = 0
     let y = 0
@@ -98,10 +99,10 @@ Page({
     let result = []
     //疑问 如何用正则匹配变量
     for (let i = 1; i < 5; i++) {
-      console.log("i=",i);
+      // console.log("i=",i);
       for (let j = 0; j < data[i].length; j++) {
         // console.log(data[i].length);
-        console.log("j=",j);
+        // console.log("j=",j);
         if (data[i][j].n == this.data.value) {
           ishave = "true"
           x = i
