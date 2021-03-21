@@ -1,1 +1,14 @@
 /* miniprogram/pages/allList/allList.wxss */
+/* page{
+  background-image: url("https://hbimg.huabanimg.com/d28c2316047c9bd5094ac57716b496b837518c582a62-AQYONU_fw658/format/webp");
+} */
+.list{
+  position: relative; 
+  width: 100vw;
+  height: 100vh; 
+}
+.listItem{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

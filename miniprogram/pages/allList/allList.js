@@ -1,5 +1,6 @@
 // miniprogram/pages/allList/allList.js
 // let kind=-1
+const app=getApp()
 Page({
 
   /**
@@ -17,6 +18,9 @@ Page({
     // kind=options.kind
     this.setData({
       kind:options.kind
+    })
+    this.setData({
+      urls:app.globalData.urls[options.kind-1]
     })
   },
 

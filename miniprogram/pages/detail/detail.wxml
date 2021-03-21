@@ -13,7 +13,6 @@
       {{urls[value.c-1].content}}
     </view>
     <view class="content">
-     
       {{urls[value.c-1].desc}}
     </view>
   </view>

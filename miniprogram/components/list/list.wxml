@@ -1,4 +1,4 @@
-<view class="list-container">
+<!-- <view class="list-container">
   <view class="title"wx:if="{{open}}"  bindtap="open">
     点击收回
   </view>
@@ -8,4 +8,15 @@
   <view class="item" wx:for="{{list}}" wx:if="{{open}}">
     {{item.n}}
   </view>
-</view>
+</view> -->
+<scroll-view class="list-container" scroll-y="true">
+  <view class="title"wx:if="{{open}}"  bindtap="open">
+    点击收回
+  </view>
+  <view class="title"wx:if="{{!open}}"  bindtap="open">
+    点击展开
+  </view>
+  <view class="item" wx:for="{{list}}" wx:if="{{open}}">
+    {{item.n}}
+  </view>
+</scroll-view>

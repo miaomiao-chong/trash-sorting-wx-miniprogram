@@ -1,1 +1,4 @@
-<s-list kind="{{kind}}"></s-list>
+
+<view class="list" style="background:url({{urls.url}}) no-repeat top/cover ">
+  <s-list kind="{{kind}}" class="listItem"></s-list>
+</view>

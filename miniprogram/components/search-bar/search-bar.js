@@ -27,7 +27,7 @@ Component({
       // console.log("触发了onsearch");
       // console.log(inputValue);
       this.triggerEvent("inputValue",inputValue)
-     
+     console.log("search组件执行了一次");
     }
   },
 

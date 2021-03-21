@@ -1,12 +1,16 @@
+.list-container{
+  width: 500rpx;
+  height: 100vh;
+}
 .title{
-  width: 60vw;
+  width: 500rpx;
   border-radius: 20rpx;
   height: 60rpx;
   line-height: 60rpx;
   text-align: center;
 }
  .item{
-  width: 60vw;
+  width:500rpx;
   border-radius: 20rpx;
   height: 60rpx;
   background-color: rgba(172, 173, 175,.3);
