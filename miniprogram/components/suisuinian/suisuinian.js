@@ -37,7 +37,7 @@ Component({
         img:2
       },
       {
-        content:"设想",
+        content:"考虑增加搜索历史功能和热门搜索功能",
         time:'2020.3.21',
         by:"我的碎碎念",
         img:2
