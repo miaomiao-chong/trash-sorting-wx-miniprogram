@@ -1,0 +1,50 @@
+/* components/suisuinian/suisuinian.wxss */
+page{
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+.container{
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20rpx;
+
+}
+.img{
+  position: absolute;
+  top: -10rpx;
+  z-index: 2;
+}
+.imgStyle1{
+  width: 90rpx;
+  height: 90rpx;
+  transform: rotate(-20deg);
+  
+}
+.content-container{
+  position: relative;
+}
+.textArea{
+  width: 80vw;
+  min-height: 300rpx;
+  background-color: rgb(197, 72, 83);
+  box-shadow: 0 10rpx 5rpx rgb(90, 85, 85);
+  padding:120rpx 60rpx 60rpx 60rpx;
+  margin-bottom: 50rpx;
+  color: rgba(41, 38, 36, 0.993);
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.by {
+  position: absolute;
+  bottom: 30rpx;
+  right: 30rpx;
+
+}
+.time{
+  position: absolute;
+  bottom: 70rpx;
+  right: 30rpx;
+}

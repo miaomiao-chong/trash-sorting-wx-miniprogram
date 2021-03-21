@@ -1,0 +1,10 @@
+/* miniprogram/pages/index/index.wxss */
+/* 搜索框 */
+.container-box{
+  margin-top: 30rpx;
+}
+.more{
+  position: fixed;
+  bottom: 60rpx;
+  right: 20rpx;
+}

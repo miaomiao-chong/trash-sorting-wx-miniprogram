@@ -1,0 +1,5 @@
+<!-- 为了提高复用性，把输入的值传到index.js而不是在组件里处理 -->
+<view class="search">
+  <input class="input" type="text" placeholder="点此输入" bindinput="handleInput" />
+  <i bindtap="onSearch" class="iconfont icon-sousuo"></i>
+</view>

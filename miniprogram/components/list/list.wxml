@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="title">
+    <view wx:if="{{ishave==true}}">
+      
+    </view>
+    <view else> 没有查询到哦</view>
+  </view>
+
+ 
+</view>

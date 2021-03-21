@@ -1,0 +1,13 @@
+<view wx:for="{{mysuisuinian}}" class="container">
+  <view class="img">
+    <!-- 这里的写法是为了图片可以循环利用 -->
+    <image src="{{imgsrc[index%imgsrc.length]}}" class="imgStyle1"></image>
+  </view>
+  <view class="content-container">
+    <view class="textArea">{{item.content}}</view>
+    <view class="by">{{item.by}}</view>
+    <view class="time">
+      {{item.time}}
+    </view>
+  </view>
+</view>

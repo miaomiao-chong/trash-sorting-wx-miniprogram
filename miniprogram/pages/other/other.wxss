@@ -1,0 +1,4 @@
+/* miniprogram/pages/other/other.wxss */
+.louyanban{
+  margin-top: 30rpx;
+}

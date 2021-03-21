@@ -1,0 +1,6 @@
+<view class="container-box">
+  <s-search bindinputValue="handleInput"></s-search>
+</view>
+<view class="more" bindtap="gotomore"> 
+  建设中
+</view>

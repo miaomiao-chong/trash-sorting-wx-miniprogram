@@ -1,0 +1,32 @@
+/* components/search-bar/search-bar.wxss */
+@import "./iconfont.wxss";
+page{
+  width: 100%;
+}
+.search{
+  display: flex;
+  height: 60rpx;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative; 
+}
+.input{
+  height: 60rpx;
+  width: 80%;
+  margin: 0 auto;
+  border: 1rpx solid rgb(164, 200, 209);
+  box-shadow:0px 2px 6px rgb(113, 113, 155);
+  border-radius: 30rpx;
+  padding:0 30rpx;
+}
+.icon-sousuo{
+  display: block;
+  text-align: center;
+  padding: 10rpx 20rpx;
+  position: absolute;
+  right: 50rpx;
+
+  color: rgb(157, 157, 221);
+  z-index: 3;
+  font-weight: 600;
+}

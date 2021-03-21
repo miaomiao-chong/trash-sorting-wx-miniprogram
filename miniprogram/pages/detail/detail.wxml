@@ -1,0 +1,8 @@
+<view class="container">
+  <view wx:if="{{ishave}}">
+    没有找到哦
+  </view>
+  <view wx:else>
+    
+  </view>
+</view>

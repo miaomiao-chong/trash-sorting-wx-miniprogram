@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "s-suisuinian":"/components/suisuinian/suisuinian"
+  },
+  "navigationBarTitleText": "留言板"
+}
