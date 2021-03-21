@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/other/other",
     "pages/test/test",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/allList/allList"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

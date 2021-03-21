@@ -106,9 +106,7 @@ Page({
     }if(ishave==false){
       console.log("没找到");
     }
-    wx.hideLoading({
-            
-    })
+    wx.hideLoading()
     console.log(result);
     this.gotoDetail(JSON.stringify(result))
   },

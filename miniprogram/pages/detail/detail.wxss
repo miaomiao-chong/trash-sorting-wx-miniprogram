@@ -1,1 +1,15 @@
 /* miniprogram/pages/detail/detail.wxss */
+page{
+  padding: 20rpx;
+}
+.header{
+  margin: 20rpx auto;
+  width: 80vw;
+  height: 500rpx;
+  background-color: rgb(231, 229, 229);
+  border-radius: 20rpx;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+}

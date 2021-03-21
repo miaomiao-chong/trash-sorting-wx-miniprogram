@@ -1,8 +1,21 @@
 <view class="container">
-  <view wx:if="{{ishave}}">
+  <view wx:if="{{ishave==false}}" class="header">
     没有找到哦
   </view>
-  <view wx:else>
-    
+  <view wx:else class="header {{value.classname}}">
+    111
   </view>
+
+  <view class="gotoAllList" bindtap="gotoAllList">
+    <view class="name">
+    <image src="{{urls[value.c-1].url}}" class="img"></image>
+  
+      {{urls[value.c-1].content}}
+    </view>
+    <view class="content">
+     
+      {{urls[value.c-1].desc}}
+    </view>
+  </view>
+
 </view>

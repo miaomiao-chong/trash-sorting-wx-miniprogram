@@ -1,1 +1,18 @@
-/* components/list/list.wxss */
+.title{
+  width: 60vw;
+  border-radius: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+ .item{
+  width: 60vw;
+  border-radius: 20rpx;
+  height: 60rpx;
+  background-color: rgba(172, 173, 175,.3);
+  line-height: 60rpx;
+  text-align: center;
+}
+.item:nth-child(2n){
+  background-color: rgba(255, 255, 255, 0.568);
+}
