@@ -72,13 +72,14 @@ Page({
     data = a
   },
 
+
   //搜索内容获取
   handleInput(e) {
     console.log('成功点击了');
     console.log(e.detail);
     value = e.detail
     this.setData({
-      value:e.detail
+      value: e.detail
     })
     // console.log(data);
     this.jiansuo()
@@ -90,15 +91,17 @@ Page({
     console.log("datassm" + data);
     let that = this
     let x = 0
-      let y = 0
+    let y = 0
     wx.showLoading({
       title: '加载中',
     })
     let result = []
     //疑问 如何用正则匹配变量
     for (let i = 1; i < 5; i++) {
+      console.log("i=",i);
       for (let j = 0; j < data[i].length; j++) {
-        console.log(data[i].length);
+        // console.log(data[i].length);
+        console.log("j=",j);
         if (data[i][j].n == this.data.value) {
           ishave = "true"
           x = i
