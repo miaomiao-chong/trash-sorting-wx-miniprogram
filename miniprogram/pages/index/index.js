@@ -31,7 +31,10 @@ Page({
     }).then((res) => {
       // console.log(res);
       let openid = res.result.openid
-      this.data.openid = openid
+      // this.data.openid = openid
+      this.setData({
+        openid
+      })
       let result = wx.getStorageSync(openid)
 
       if (result === '') {
@@ -40,8 +43,8 @@ Page({
         //并取出来放到data
         console.log("初始化了一下");
         this.setlist()
-        wx.setStorageSync(openid, [])
-      } else {
+        // wx.setStorageSync(openid, [])
+      }else{
         //以前放到缓存过就取出来放data里面
         this.getlist()
       }
@@ -69,7 +72,7 @@ Page({
     this.setData({
       list: a
     })
-    data = a
+    data=a
   },
 
 
