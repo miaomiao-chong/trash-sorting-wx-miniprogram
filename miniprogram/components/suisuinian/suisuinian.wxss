@@ -2,11 +2,11 @@
 page{
   width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: center;
 
 }
 .container{
-  box-sizing: border-box;
+
   position: relative;
   margin-bottom: 20rpx;
 
@@ -26,12 +26,12 @@ page{
   position: relative;
 }
 .textArea{
-  width: 80vw;
+  width: 75vw;
   min-height: 300rpx;
   background-color: rgb(197, 72, 83);
   box-shadow: 0 10rpx 5rpx rgb(90, 85, 85);
-  padding:120rpx 60rpx 60rpx 60rpx;
-  margin-bottom: 50rpx;
+  padding:115rpx 60rpx 80rpx 60rpx;
+  margin-bottom: 70rpx;
   color: rgba(41, 38, 36, 0.993);
   font-size: 36rpx;
   font-weight: 700;

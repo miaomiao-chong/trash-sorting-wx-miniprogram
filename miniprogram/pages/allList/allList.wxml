@@ -1,4 +1,4 @@
 
-<view class="list" style="background:url({{urls.url}}) no-repeat top/cover ">
+<view class="list" style="background:url({{urls.url}});background-size: 20% ">
   <s-list kind="{{kind}}" class="listItem"></s-list>
 </view>

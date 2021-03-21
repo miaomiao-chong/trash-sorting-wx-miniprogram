@@ -8,15 +8,16 @@
   height: 60rpx;
   line-height: 60rpx;
   text-align: center;
+  background-color: rgb(160, 211, 208);
 }
  .item{
   width:500rpx;
   border-radius: 20rpx;
   height: 60rpx;
-  background-color: rgba(172, 173, 175,.3);
+  background-color: rgba(172, 173, 175,.6);
   line-height: 60rpx;
   text-align: center;
 }
 .item:nth-child(2n){
-  background-color: rgba(255, 255, 255, 0.568);
+  background-color: rgba(255, 255, 255, 0.868);
 }
