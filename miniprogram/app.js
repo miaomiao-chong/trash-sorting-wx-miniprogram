@@ -17,7 +17,7 @@ App({
     }, {
       url: "https://hbimg.huabanimg.com/d28c2316047c9bd5094ac57716b496b837518c582a62-AQYONU_fw658/format/webp",
       content: "可回收垃圾",
-      desc:"可回收物指适宜回收利用和资源化利用的生活废弃物 [1]  。可回收物主要品种包括：废纸、废塑料、废金属、废包装物、废旧纺织物、废弃电器电子产品、废玻璃、废纸塑铝复合包装等。"
+      desc:"可回收物指适宜回收利用和资源化利用的生活废弃物。可回收物主要品种包括：废纸、废塑料、废金属、废包装物、废旧纺织物、废弃电器电子产品、废玻璃、废纸塑铝复合包装等。"
     }, {
       url: "https://hbimg.huabanimg.com/ccd81b30179edd68d51052aca37f71342c07c5d81b04-jCVO0v_fw658/format/webp",
       content: "有害垃圾",

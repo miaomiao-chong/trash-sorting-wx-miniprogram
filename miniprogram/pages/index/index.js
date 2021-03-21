@@ -44,7 +44,7 @@ Page({
         console.log("初始化了一下");
         this.setlist()
         wx.setStorageSync(openid, [])
-      }else{
+      } else {
         //以前放到缓存过就取出来放data里面
         this.getlist()
       }
@@ -72,10 +72,8 @@ Page({
     this.setData({
       list: a
     })
-    data=a
+    data = a
   },
-
-
   //搜索内容获取
   handleInput(e) {
     console.log('成功点击了');
@@ -86,12 +84,12 @@ Page({
     })
     // console.log(data);
     this.jiansuo()
-    console.log("datassm" + data);
+    // console.log("datassm" + data);
   },
   // 检索
   jiansuo() {
-    ishave=false
-    console.log(data[1]);
+    ishave = false
+    // console.log(data[1]);
     // console.log("datassm" + data);
     let that = this
     let x = 0
@@ -128,8 +126,6 @@ Page({
     wx.hideLoading()
     // console.log(result);
     this.gotoDetail(JSON.stringify(result))
-
-
   },
 
   gotoDetail(result) {

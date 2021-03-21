@@ -1,20 +1,22 @@
 <view class="container">
-  <view wx:if="{{ishave==false}}" class="header">
-    没有找到哦
+  <view wx:if="{{ishave}}" class="header {{value.classname}}">
+    <view class="good">{{value.n}}</view>
+    <view class="type"> {{urls[value.c-1].content}}</view>
   </view>
-  <view wx:else class="header {{value.classname}}">
-    111
+  <view wx:if="{{!ishave}}" class="header fontcss">
+    <view>暂无</view>
+   <view>（用户自行添加待更）</view>
   </view>
-
-  <view class="gotoAllList" bindtap="gotoAllList">
-    <view class="name">
-    <image src="{{urls[value.c-1].url}}" class="img"></image>
-  
-      {{urls[value.c-1].content}}
+  <view hidden="{{!ishave}}" class="desc">
+    <view class="gotoAllList" bindtap="gotoAllList">
+      <!-- 根据value里面的classname属性来改变字体颜色 -->
+      <view class="name {{value.classname}}">
+        <image src="{{urls[value.c-1].url}}" class="img"></image>
+        {{urls[value.c-1].content}}
+      </view>
+      <view class="content">
+        {{urls[value.c-1].desc}}
+      </view>
     </view>
-    <view class="content">
-      {{urls[value.c-1].desc}}
-    </view>
   </view>
-
 </view>

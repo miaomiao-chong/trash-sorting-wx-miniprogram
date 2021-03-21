@@ -1,7 +1,5 @@
 /* miniprogram/pages/detail/detail.wxss */
-page{
-  padding: 20rpx;
-}
+
 .header{
   margin: 20rpx auto;
   width: 80vw;
@@ -12,4 +10,53 @@ page{
 .img{
   width: 100rpx;
   height: 100rpx;
+}
+.name{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.desc{
+  padding: 30rpx;
+}
+.content{
+  margin-top: 30rpx;
+  letter-spacing:2rpx;
+  font-size: 40rpx;
+  line-height: 1.5;
+
+}
+.qita{
+  color: #211817;
+}
+.chuyu{
+  color: #017B39;
+}
+.kehuishou{
+  color: #004F96;
+}
+.youhai{
+  color: #E80013;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.good{
+  font-size: 68rpx;
+  margin-bottom: 50rpx;
+
+}
+.type{
+  font-size: 78rpx;
+  font-weight: 700;
+}
+.fontcss{
+  font-size: 45rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
