@@ -11,13 +11,14 @@
 .fangxing{
   width: 140rpx;
   height: 500rpx;
-  background-color: rgba(122, 85, 85, 0.575);
+  background-color: rgba(248, 241, 241, 0);
 }
 .xiaContainer{
   display: flex;
   position: fixed;
   bottom: 210rpx;
   left: 70rpx;
+  z-index: -1;
 }
 .xiaitem{
   display: flex;
@@ -25,6 +26,7 @@
   /* justify-content: center; */
   align-items: center;
   margin-right: 10rpx;
+
 }
 .xia{
   font-size: 36rpx;

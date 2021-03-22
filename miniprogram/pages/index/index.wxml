@@ -10,3 +10,7 @@
 <view class="infoImage">
   <s-infoClick class="image"></s-infoClick>
 </view>
+<view class="hand" wx:if="{{isshow}}">
+  来点一下垃圾桶吧
+  <i class="iconfont icon-mobile"></i>
+</view>
