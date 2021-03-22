@@ -8,8 +8,6 @@ Page({
   data: {
     value: '',
     ishave: true,
-
-
   },
 
   /**

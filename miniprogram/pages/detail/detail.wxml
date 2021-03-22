@@ -5,7 +5,7 @@
   </view>
   <view wx:if="{{!ishave}}" class="header fontcss">
     <view>暂无</view>
-   <view>（用户自行添加待更）</view>
+   <!-- <view>（用户自行添加待更）</view> -->
   </view>
   <view hidden="{{!ishave}}" class="desc">
     <view class="gotoAllList" bindtap="gotoAllList">

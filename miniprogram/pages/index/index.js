@@ -145,11 +145,11 @@ Page({
   //   this.gotoDetail(JSON.stringify(result))
   // },
 
-  gotoDetail(result) {
-    wx.navigateTo({
-      url: `../detail/detail?value=${result}&ishave=${ishave}`,
-    })
-  },
+  // gotoDetail(result) {
+  //   wx.navigateTo({
+  //     url: `../detail/detail?value=${result}&ishave=${ishave}`,
+  //   })
+  // },
   gotomore() {
     wx.navigateTo({
       url: '../other/other',

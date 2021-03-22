@@ -1,7 +1,10 @@
-<block wx:for="{{list}}" > 
+<scroll-view scroll-y="true" class="scroll">
+  <block wx:for="{{list}}"  > 
   <view class="item" data-item="{{item}}" bindtap="gotoDetail">
     <view class="itemDetail">
       {{item.n}}
     </view>
   </view>
 </block>
+{{list}}
+</scroll-view>
