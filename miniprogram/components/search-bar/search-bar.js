@@ -21,8 +21,16 @@ Component({
   methods: {
     handleInput(e){
       // console.log(e);
-    
+      
       inputValue=e.detail.value
+      //输入框没东西了以后就不显示search-list组件
+      if(inputValue==''){
+        this.triggerEvent("hide")
+        console.log("hide");
+      }else{
+        this.triggerEvent("show")
+        console.log("show");
+      }
     },
     onSearch(){
       // console.log("触发了onsearch");

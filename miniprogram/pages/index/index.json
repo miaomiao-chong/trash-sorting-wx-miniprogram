@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "s-search":"/components/search-bar/search-bar",
-    "s-search-list":"/components/search-list/search-list"
+    "s-search-list":"/components/search-list/search-list",
+    "s-infoClick":"/components/infoClick/infoClick"
   }
 }

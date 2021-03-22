@@ -1,9 +1,12 @@
 <view class="search-box">
-  <s-search bindinputValue="handleInput"></s-search>
+  <s-search bindinputValue="handleInput" bindhide="hide" bindshow="show"></s-search>
 </view>
-<!-- <view class="more" bindtap="gotomore"> 
+<!-- <view class="more" bindtap="gotomore" wx:if="{{isshow}}"> 
   建设中
 </view> -->
-<view class="listContainer">
-  <s-search-list list="{{resArr}}"></s-search-list>
+<view class="listContainer" wx:if="{{!isshow}}">
+  <s-search-list list="{{resArr}}" ></s-search-list>
+</view>
+<view class="infoImage">
+  <s-infoClick class="image"></s-infoClick>
 </view>

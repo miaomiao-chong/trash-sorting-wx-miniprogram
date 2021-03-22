@@ -13,13 +13,15 @@ wx.cloud.init({
 let value = '' //输入内容
 let data = [] //搜索数据用
 let ishave = "false" //判断有没有找到
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    openid: ''
+    openid: '',
+    isshow:true
   },
   onLoad() {
     this.getOpenid()
@@ -107,6 +109,17 @@ Page({
         url: `../detail/detail?value=${""}&ishave=false`,
       })
     }
+  },
+  //控制搜索时其他内容的显示问题
+  hide(){
+    this.setData({
+      isshow:true
+    })
+  },
+  show(){
+    this.setData({
+      isshow:false
+    })
   },
   // 检索
   // jiansuo() {
