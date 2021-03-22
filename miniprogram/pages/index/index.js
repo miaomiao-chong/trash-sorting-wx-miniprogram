@@ -102,6 +102,11 @@ Page({
     this.setData({
       resArr:arr
     })
+    if(arr.length==0){
+      wx.navigateTo({
+        url: `../detail/detail?value=${""}&ishave=false`,
+      })
+    }
   },
   // 检索
   // jiansuo() {

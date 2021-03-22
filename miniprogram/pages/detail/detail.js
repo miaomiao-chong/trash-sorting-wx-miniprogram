@@ -25,10 +25,12 @@ Page({
       this.setData({
         ishave: false
       })
+    }if(options.value.length!=0){
+      this.setData({
+        value: JSON.parse(options.value)
+      })
     }
-    this.setData({
-      value: JSON.parse(options.value)
-    })
+    
     this.className()
 
     this.setData({

@@ -4,7 +4,7 @@
     <view class="itemDetail">
       {{item.n}}
     </view>
+ 
   </view>
 </block>
-{{list}}
 </scroll-view>

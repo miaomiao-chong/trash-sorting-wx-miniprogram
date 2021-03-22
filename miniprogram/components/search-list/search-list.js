@@ -8,7 +8,8 @@ Component({
    */
   properties: {
     list:{
-      type:Object
+      type:Object,
+      value:{}
     }
   },
 
