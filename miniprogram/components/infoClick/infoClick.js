@@ -18,6 +18,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    gotodetail(e){
+      console.log(e.currentTarget.dataset.kind);
+      let kind=e.currentTarget.dataset.kind
+      wx.navigateTo({
+        url:  `../allList/allList?kind=${kind}`,
+      })
+    }
   }
 })

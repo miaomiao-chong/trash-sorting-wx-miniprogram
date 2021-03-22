@@ -1,20 +1,20 @@
 <image class="infoImg" src="https://img-blog.csdnimg.cn/20210322224529721.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW96aGF6aGF6aGF6aGE=,size_16,color_FFFFFF,t_70" mode="heightFix	"></image>
 <view class="xiaContainer">
   <!-- 在图片上添加盒子 盒子透明，点击盒子跳转 -->
-  <view class="xiaitem">
-    <view class="xia">↓</view>
+  <view class="xiaitem" data-kind="1" bindtap="gotodetail">
+    <!-- <view class="xia">↓</view> -->
     <view class="fangxing"></view>
   </view>
-  <view class="xiaitem">
-    <view class="xia">↓</view>
+  <view class="xiaitem" data-kind="3" bindtap="gotodetail">
+    <!-- <view class="xia">↓</view> -->
     <view class="fangxing"></view>
   </view>
-  <view class="xiaitem">
-    <view class="xia">↓</view>
+  <view class="xiaitem" data-kind="4"bindtap="gotodetail">
+    <!-- <view class="xia">↓</view> -->
     <view class="fangxing"></view>
   </view>
-  <view class="xiaitem">
-    <view class="xia">↓</view>
+  <view class="xiaitem" data-kind="2"bindtap="gotodetail">
+    <!-- <view class="xia">↓</view> -->
     <view class="fangxing"></view>
   </view>
 </view>

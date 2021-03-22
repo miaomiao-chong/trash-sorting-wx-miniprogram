@@ -9,7 +9,25 @@
   z-index: -1;
 }
 .fangxing{
-  width: 120rpx;
-  height: 400rpx;
+  width: 140rpx;
+  height: 500rpx;
   background-color: rgba(122, 85, 85, 0.575);
+}
+.xiaContainer{
+  display: flex;
+  position: fixed;
+  bottom: 210rpx;
+  left: 70rpx;
+}
+.xiaitem{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-right: 10rpx;
+}
+.xia{
+  font-size: 36rpx;
+  color: brown;
+  margin-bottom: 20rpx;
 }
