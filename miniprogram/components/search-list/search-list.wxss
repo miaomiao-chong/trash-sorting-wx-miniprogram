@@ -1,0 +1,14 @@
+/* components/search-list/search-list.wxss */
+.item{
+  width: 650rpx;
+  height: 60rpx;
+  background-color: rgba(209, 209, 209, 0.623);
+  margin-bottom: 10rpx;
+  border-radius: 20rpx;
+  margin: 20rpx auto;
+}
+.itemDetail{
+  text-align: center;
+  line-height: 60rpx;
+ font-size: 36rpx;
+}

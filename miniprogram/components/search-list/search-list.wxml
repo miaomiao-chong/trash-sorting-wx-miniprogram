@@ -1,0 +1,7 @@
+<block wx:for="{{list}}" > 
+  <view class="item" data-item="{{item}}" bindtap="gotoDetail">
+    <view class="itemDetail">
+      {{item.n}}
+    </view>
+  </view>
+</block>

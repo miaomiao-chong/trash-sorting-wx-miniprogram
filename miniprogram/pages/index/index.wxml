@@ -1,6 +1,9 @@
-<view class="container-box">
+<view class="search-box">
   <s-search bindinputValue="handleInput"></s-search>
 </view>
-<view class="more" bindtap="gotomore"> 
+<!-- <view class="more" bindtap="gotomore"> 
   建设中
+</view> -->
+<view class="listContainer">
+  <s-search-list list="{{resArr}}"></s-search-list>
 </view>

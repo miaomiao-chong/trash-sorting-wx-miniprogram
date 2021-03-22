@@ -87,46 +87,63 @@ Page({
     // console.log("datassm" + data);
   },
   // 检索
-  jiansuo() {
-    ishave = false
-    // console.log(data[1]);
-    // console.log("datassm" + data);
-    let that = this
-    let x = 0
-    let y = 0
-    wx.showLoading({
-      title: '加载中',
-    })
-    let result = []
-    //疑问 如何用正则匹配变量
-    for (let i = 1; i < 5; i++) {
-      // console.log("i=",i);
-      for (let j = 0; j < data[i].length; j++) {
-        // console.log(data[i].length);
-        // console.log("j=",j);
-        if (data[i][j].n == this.data.value) {
-          ishave = "true"
-          x = i
-          y = j
-          console.log("找到了");
-          break
+  jiansuo(){
+    let arr=[]
+    for(let i=1;i<5;i++){
+      for(let j=0;j<data[i].length;j++){
+        if(data[i][j].n.match(this.data.value)){
+          // console.log("匹配到");
+        //  console.log(data[i][j])
+        // 匹配到了以后把每个数据传给组件 在组件里进行显示 并且可以点击进入
+           arr.push(data[i][j])
         }
       }
-      if (ishave == "true") {
-        break
-      }
     }
-    if (ishave == "true") {
-      console.log("找到了");
-      result = data[x][y]
-
-    } else {
-      console.log("没找到");
-    }
-    wx.hideLoading()
-    // console.log(result);
-    this.gotoDetail(JSON.stringify(result))
+    this.setData({
+      resArr:arr
+    })
   },
+  // 检索
+  // jiansuo() {
+  //   ishave = false
+  //   // console.log(data[1]);
+  //   // console.log("datassm" + data);
+  //   let that = this
+  //   let x = 0
+  //   let y = 0
+  //   wx.showLoading({
+  //     title: '加载中',
+  //   })
+  //   let result = []
+  //   //疑问 如何用正则匹配变量
+  //   for (let i = 1; i < 5; i++) {
+  //     // console.log("i=",i);
+  //     for (let j = 0; j < data[i].length; j++) {
+  //       // console.log(data[i].length);
+  //       // console.log("j=",j);
+  //       if (data[i][j].n == this.data.value) {
+  //         ishave = "true"
+  //         x = i
+  //         y = j
+  //         console.log("找到了");
+  //         break
+  //       }
+  //     }
+  //     if (ishave == "true") {
+  //       break
+  //     }
+  //   }
+  //   if (ishave == "true") {
+  //     console.log("找到了");
+  //     result = data[x][y]
+
+  //   } else {
+  //     console.log("没找到");
+  //   }
+  //   wx.hideLoading()
+  //   // console.log(result);
+  //   this.gotoDetail(JSON.stringify(result))
+  // },
 
   gotoDetail(result) {
     wx.navigateTo({
