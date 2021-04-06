@@ -49,3 +49,8 @@ margin-top: 150rpx;
   color: rgb(58, 105, 39);
   font-size: 46rpx;
 }
+.click{
+  width: 30rpx;
+  height: 30rpx;
+  background-color: rgb(151, 37, 37);
+}

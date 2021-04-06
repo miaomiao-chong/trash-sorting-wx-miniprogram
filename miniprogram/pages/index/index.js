@@ -26,7 +26,24 @@ Page({
   onLoad() {
     this.getOpenid()
   },
-
+  click(){
+    wx.showLoading({
+      title: '生成中',
+    })
+    wx.cloud.callFunction({
+      name:"getQrCode"
+    }).then((res)=>{
+      console.log(res.result);
+      let path=res.result
+      wx.previewImage({
+        urls: [path],
+        current: path,
+      })
+      wx.hideLoading({
+        success: (res) => {},
+      })
+    })
+  },
   getOpenid() {
     wx.cloud.callFunction({
       name: "openid"

@@ -14,3 +14,5 @@
   来点一下垃圾桶吧
   <i class="iconfont icon-mobile"></i>
 </view>
+
+<view class="click" bindtap="click"></view>
